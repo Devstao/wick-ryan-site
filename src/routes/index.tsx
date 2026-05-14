@@ -186,7 +186,7 @@ function Hero() {
             alt="Retrato institucional de Wick Ryan, empreendedor amazonense"
             width={1024}
             height={1280}
-            className="relative w-full aspect-[4/5] object-cover"
+            className="relative w-full aspect-[4/5] object-cover object-top"
           />
           <div className="absolute top-6 right-6 bg-background/90 backdrop-blur px-4 py-3 border border-gold/40">
             <div className="eyebrow text-gold">Origem</div>
