@@ -1,4 +1,4 @@
-@import "tailwindcss" source(none);
+@import "tailwindcss";
 @source "../src";
 @import "tw-animate-css";
 
@@ -64,15 +64,15 @@
 
   --ink: oklch(0.06 0 0);
   --bone: oklch(0.98 0.005 90);
-  --gold: oklch(0.86 0.17 95);   /* vivid yellow */
-  --amazon: oklch(0.86 0.17 95); /* alias to yellow for legacy refs */
+  --gold: #fcc104;   /* vivid yellow */
+  --amazon: oklch(0.76 0.18 78); /* deeper amber, tom amazônico */
 
   --card: oklch(0.12 0.006 80);
   --card-foreground: oklch(0.98 0.005 90);
   --popover: oklch(0.12 0.006 80);
   --popover-foreground: oklch(0.98 0.005 90);
 
-  --primary: oklch(0.86 0.17 95);
+  --primary: oklch(0.87 0.19 91); /* amarelo ligeiramente mais frio e luminoso */
   --primary-foreground: oklch(0.06 0 0);
 
   --secondary: oklch(0.16 0.008 80);
@@ -81,7 +81,7 @@
   --muted: oklch(0.18 0.008 80);
   --muted-foreground: oklch(0.72 0.012 90);
 
-  --accent: oklch(0.86 0.17 95);
+  --accent: oklch(0.80 0.17 82); /* ouro quente, levemente alaranjado */
   --accent-foreground: oklch(0.06 0 0);
 
   --destructive: oklch(0.6 0.22 27);
@@ -89,7 +89,7 @@
 
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 14%);
-  --ring: oklch(0.86 0.17 95);
+  --ring: oklch(0.85 0.21 87); /* foco vivo, próximo ao gold */
 
   --sidebar: var(--background);
   --sidebar-foreground: var(--foreground);
@@ -114,11 +114,11 @@
   --secondary-foreground: oklch(0.96 0.005 80);
   --muted: oklch(0.22 0.014 250);
   --muted-foreground: oklch(0.7 0.012 250);
-  --accent: oklch(0.72 0.09 75);
+  --accent: oklch(0.68 0.13 80); /* âmbar suave para dark mode */
   --accent-foreground: oklch(0.13 0.012 250);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.72 0.09 75);
+  --ring: oklch(0.74 0.17 87); /* foco mais vivo no dark */
 }
 
 @layer base {
