@@ -491,6 +491,7 @@ function Footer() {
       <div className="container-x mt-14 pt-6 border-t border-border flex flex-wrap justify-between gap-4 text-xs text-muted-foreground">
         <div>© {new Date().getFullYear()} Wick Ryan. Todos os direitos reservados.</div>
         <div>Manaus · Amazonas · Brasil</div>
+        <div>Um projeto <a href="https://devstao.dev" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition"> DEVstão </a></div>
       </div>
     </footer>
   );
