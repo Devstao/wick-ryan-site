@@ -199,8 +199,8 @@ function Hero() {
         {[
           ["1999", "Nascido em Benjamin Constant"],
           ["+10", "Anos de trajetória empreendedora"],
-          ["62", "Municípios do Amazonas"],
-          ["1", "Visão de futuro para a região"],
+          ["03", "Frentes de atuação: negócios, design e voz pública"],
+          ["AM", "Raiz e atuação no Amazonas"],
         ].map(([k, v]) => (
           <div key={v}>
             <div className="font-display text-3xl text-gold">{k}</div>
