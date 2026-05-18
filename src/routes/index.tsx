@@ -435,7 +435,9 @@ function CTA() {
           </p>
           <div className="mt-12 flex flex-wrap gap-4">
             <a
-              href="mailto:contato@wickryan.com.br"
+              href="https://chat.whatsapp.com/FkjIQLO5J1W1K4YRoKlPOB?mode=gi_t"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-gold"
             >
               Entrar em contato <ArrowUpRight className="h-4 w-4" />
@@ -455,20 +457,20 @@ function CTA() {
                 href="https://chat.whatsapp.com/FkjIQLO5J1W1K4YRoKlPOB?mode=gi_t"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-6 py-3 border border-gold/40 text-gold text-sm font-medium hover:bg-gold hover:text-background transition"
+                className="inline-flex items-center gap-3 px-5 py-3 border border-gold/40 text-gold text-sm font-medium hover:bg-gold hover:text-background transition w-full sm:w-auto justify-center"
               >
                 <MessageCircle className="h-4 w-4" />
-                Grupo 1
+                Apoiadores Wick Ryan
                 <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
               <a
                 href="https://chat.whatsapp.com/J0YiTzxdDlYLa602x2or9L?mode=gi_t"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-6 py-3 border border-gold/40 text-gold text-sm font-medium hover:bg-gold hover:text-background transition"
+                className="inline-flex items-center gap-3 px-5 py-3 border border-gold/40 text-gold text-sm font-medium hover:bg-gold hover:text-background transition w-full sm:w-auto justify-center"
               >
                 <MessageCircle className="h-4 w-4" />
-                Grupo 2
+                Denúncias
                 <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
             </div>
