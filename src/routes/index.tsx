@@ -125,7 +125,9 @@ function Nav() {
           <a href="#contato" className="hover:text-gold transition">Contato</a>
         </nav>
         <a
-          href="#contato"
+          href="https://chat.whatsapp.com/FkjIQLO5J1W1K4YRoKlPOB?mode=gi_t"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden md:inline-flex btn-gold text-xs"
         >
           Falar com Wick <ArrowUpRight className="h-3.5 w-3.5" />
