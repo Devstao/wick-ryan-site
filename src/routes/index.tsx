@@ -14,6 +14,7 @@ import {
   Linkedin,
   Mail,
   MapPin,
+  MessageCircle,
   Recycle,
   Rocket,
   Scale,
