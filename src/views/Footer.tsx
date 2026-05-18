@@ -1,7 +1,6 @@
 import candidatoImg from "@/assets/wick-candidato.jpg";
-import values_wick from "@/data/values_wick";
 
-const values = values_wick
+
 
 import {
     Instagram,

@@ -1,8 +1,5 @@
 import jaguarImg from "@/assets/jaguar.png";
 import heroImg from "@/assets/wick-hero.jpg";
-import values_wick from "@/data/values_wick";
-
-const values = values_wick
 
 import {
     ArrowUpRight
