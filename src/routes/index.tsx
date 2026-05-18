@@ -14,6 +14,7 @@ import {
   Linkedin,
   Mail,
   MapPin,
+  MessageCircle,
   Recycle,
   Rocket,
   Scale,
@@ -443,6 +444,32 @@ function CTA() {
             >
               Reler as ideias
             </a>
+          </div>
+
+          <div className="mt-14 pt-10 border-t border-border/60">
+            <span className="eyebrow text-gold/80">Comunidades no WhatsApp</span>
+            <div className="mt-6 flex flex-wrap gap-4">
+              <a
+                href="https://chat.whatsapp.com/FkjIQLO5J1W1K4YRoKlPOB?mode=gi_t"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-6 py-3 border border-gold/40 text-gold text-sm font-medium hover:bg-gold hover:text-background transition"
+              >
+                <MessageCircle className="h-4 w-4" />
+                Grupo 1
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </a>
+              <a
+                href="https://chat.whatsapp.com/J0YiTzxdDlYLa602x2or9L?mode=gi_t"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-6 py-3 border border-gold/40 text-gold text-sm font-medium hover:bg-gold hover:text-background transition"
+              >
+                <MessageCircle className="h-4 w-4" />
+                Grupo 2
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
