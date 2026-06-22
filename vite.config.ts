@@ -12,7 +12,5 @@ export default defineConfig({
   cloudflare: false,
   tanstackStart: {
     server: { entry: "server" },
-    spa: { enabled: true },
   },
 });
-
