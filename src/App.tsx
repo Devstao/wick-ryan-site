@@ -1,57 +1,16 @@
 import patternImg from "@/assets/amazon-pattern.jpg";
 import amazonImg from "@/assets/amazon-river.jpg";
 import jaguarImg from "@/assets/jaguar.png";
-import heroImg from "@/assets/wick-hero.jpg";
 import proposals from "@/data/proposals";
 import values_wick from "@/data/values_wick";
-
-const values = values_wick;
-
-import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
 
-// Views
 import About from "@/views/About";
 import Footer from "@/views/Footer";
 import Hero from "@/views/Hero";
 import Nav from "@/views/Nav";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Wick Ryan — Uma visão moderna para o Amazonas" },
-      {
-        name: "description",
-        content:
-          "Wick Ryan, empreendedor amazonense. Ideias, inovação e desenvolvimento regional para o futuro da Amazônia.",
-      },
-      { property: "og:title", content: "Wick Ryan — Uma visão moderna para o Amazonas" },
-      {
-        property: "og:description",
-        content:
-          "Visão estratégica, identidade amazônica e desenvolvimento regional. Conheça a trajetória e as ideias de Wick Ryan.",
-      },
-      { property: "og:image", content: heroImg },
-      { property: "twitter:image", content: heroImg },
-    ],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          name: "Wick Ryan",
-          jobTitle: "Empreendedor e Voz Pública Amazonense",
-          birthDate: "1999",
-          birthPlace: "Benjamin Constant, Amazonas, Brasil",
-          description:
-            "Empreendedor amazonense dedicado ao desenvolvimento regional, à inovação e à sustentabilidade da Amazônia.",
-        }),
-      },
-    ],
-  }),
-  component: Index,
-});
+const values = values_wick;
 
 function Marquee() {
   const words = [
@@ -231,7 +190,7 @@ function CTA() {
   );
 }
 
-function Index() {
+export default function App() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <Nav />
