@@ -202,7 +202,9 @@ export default function App() {
       <Plan />
       <Values />
       <CTA />
+      <Donate />
       <Footer />
+
     </main>
   );
 }
