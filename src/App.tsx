@@ -6,9 +6,11 @@ import values_wick from "@/data/values_wick";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
 
 import About from "@/views/About";
+import Donate from "@/views/Donate";
 import Footer from "@/views/Footer";
 import Hero from "@/views/Hero";
 import Nav from "@/views/Nav";
+
 
 const values = values_wick;
 
