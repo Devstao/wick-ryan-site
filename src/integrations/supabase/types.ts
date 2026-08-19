@@ -14,7 +14,24 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      instagram_feed_cache: {
+        Row: {
+          fetched_at: string
+          id: string
+          posts: Json
+        }
+        Insert: {
+          fetched_at?: string
+          id: string
+          posts?: Json
+        }
+        Update: {
+          fetched_at?: string
+          id?: string
+          posts?: Json
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
