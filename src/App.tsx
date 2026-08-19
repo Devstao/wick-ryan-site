@@ -10,6 +10,7 @@ import About from "@/views/About";
 import Donate from "@/views/Donate";
 import Footer from "@/views/Footer";
 import Hero from "@/views/Hero";
+import Instagram from "@/views/Instagram";
 import Nav from "@/views/Nav";
 
 
@@ -208,6 +209,7 @@ export default function App() {
       <About />
       <Plan />
       <Values />
+      <Instagram />
       <CTA />
       <Donate />
       <Footer />

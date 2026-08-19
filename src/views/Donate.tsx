@@ -23,7 +23,7 @@ export default function Donate() {
       <div className="container-x relative">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-7 animate-fade-up">
-            <span className="eyebrow text-gold">05 — Apoio</span>
+            <span className="eyebrow text-gold">06 — Apoio</span>
             <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05]">
               Faça sua <span className="text-gold-gradient text-glow-soft">doação!</span>
             </h2>
