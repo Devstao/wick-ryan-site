@@ -2,6 +2,7 @@ import patternImg from "@/assets/amazon-pattern.jpg";
 import amazonImg from "@/assets/amazon-river.jpg";
 import jaguarImg from "@/assets/jaguar.png";
 import proposals from "@/data/proposals";
+import ProposalModal from "@/components/ProposalModal";
 import values_wick from "@/data/values_wick";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
 
