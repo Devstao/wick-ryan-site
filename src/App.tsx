@@ -209,8 +209,8 @@ export default function App() {
       <About />
       <Plan />
       <Values />
-      <Instagram />
       <CTA />
+      <Instagram />
       <Donate />
       <Footer />
 
