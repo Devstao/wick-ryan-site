@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -23,6 +24,9 @@ export default function ProposalModal({ trigger, title, children }: ProposalModa
           <DialogTitle className="font-display text-2xl md:text-3xl text-foreground">
             {title}
           </DialogTitle>
+          <DialogDescription className="sr-only">
+            Clique fora ou pressione Esc para fechar.
+          </DialogDescription>
         </DialogHeader>
         <ScrollArea className="max-h-[calc(90vh-120px)] px-6 pb-6">
           <div className="prose prose-sm max-w-none text-muted-foreground leading-relaxed">
