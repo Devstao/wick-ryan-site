@@ -21,7 +21,22 @@ const instagramPosts: InstagramPost[] = [
   {
     shortcode: "DcGPuulus2b",
     type: "reel",
-    title: "Transparência no uso do dinheiro público",
+    title: "Hoje começa a farra com seu dinheiro!",
+  },
+  {
+    shortcode: "DcF4ogCuW3b",
+    type: "post",
+    title: "Agora é oficial",
+  },
+  {
+    shortcode: "DcE7H-xJ4mp",
+    type: "reel",
+    title: "As consequências de um poder público incompetente",
+  },
+  {
+    shortcode: "DcF-aKgOer7",
+    type: "post",
+    title: "Registros do Amazonas",
   },
 ];
 
