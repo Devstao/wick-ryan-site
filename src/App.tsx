@@ -2,6 +2,7 @@ import patternImg from "@/assets/amazon-pattern.jpg";
 import amazonImg from "@/assets/amazon-river.jpg";
 import jaguarImg from "@/assets/jaguar.png";
 import proposals from "@/data/proposals";
+import ProposalModal from "@/components/ProposalModal";
 import values_wick from "@/data/values_wick";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
 
@@ -65,22 +66,27 @@ function Plan() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
-          {proposals.map(({ icon: Icon, n, title, text }) => (
-            <article
+          {proposals.map(({ icon: Icon, n, title, text, modalTitle, content }) => (
+            <ProposalModal
               key={n}
-              className="group relative bg-background p-8 md:p-12 transition-colors hover:bg-card"
+              title={modalTitle}
+              trigger={
+                <article className="group relative bg-background p-8 md:p-12 transition-colors hover:bg-card cursor-pointer text-left">
+                  <div className="flex items-start justify-between mb-10">
+                    <span className="eyebrow text-gold">{n}</span>
+                    <Icon className="h-6 w-6 text-gold" strokeWidth={1.4} />
+                  </div>
+                  <h3 className="font-display text-2xl md:text-3xl mb-4 leading-tight">{title}</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm md:text-base max-w-md">
+                    {text}
+                  </p>
+                  <ArrowUpRight className="absolute bottom-8 right-8 h-5 w-5 text-muted-foreground group-hover:text-gold group-hover:translate-x-1 group-hover:-translate-y-1 transition" />
+                  <div className="absolute left-0 top-0 h-px w-0 bg-gold group-hover:w-full transition-all duration-500" />
+                </article>
+              }
             >
-              <div className="flex items-start justify-between mb-10">
-                <span className="eyebrow text-gold">{n}</span>
-                <Icon className="h-6 w-6 text-gold" strokeWidth={1.4} />
-              </div>
-              <h3 className="font-display text-2xl md:text-3xl mb-4 leading-tight">{title}</h3>
-              <p className="text-muted-foreground leading-relaxed text-sm md:text-base max-w-md">
-                {text}
-              </p>
-              <ArrowUpRight className="absolute bottom-8 right-8 h-5 w-5 text-muted-foreground group-hover:text-gold group-hover:translate-x-1 group-hover:-translate-y-1 transition" />
-              <div className="absolute left-0 top-0 h-px w-0 bg-gold group-hover:w-full transition-all duration-500" />
-            </article>
+              {content}
+            </ProposalModal>
           ))}
         </div>
       </div>
