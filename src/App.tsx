@@ -70,6 +70,7 @@ function Plan() {
             <ProposalModal
               key={n}
               title={modalTitle}
+              eyebrow={`Iniciativa ${n} — ${title}`}
               trigger={
                 <article className="group relative bg-background p-8 md:p-12 transition-colors hover:bg-card cursor-pointer text-left">
                   <div className="flex items-start justify-between mb-10">
