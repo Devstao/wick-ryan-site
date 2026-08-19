@@ -2,6 +2,13 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight, Instagram as InstagramIcon } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import instagramPosts, { instagramProfile, type InstagramPost } from "@/data/instagram";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Instagram() {
   const [posts, setPosts] = useState<InstagramPost[]>(instagramPosts);
@@ -13,7 +20,7 @@ export default function Instagram() {
       .then(({ data, error }) => {
         if (!active || error) return;
         const fetched = (data as { posts?: InstagramPost[] })?.posts;
-        if (Array.isArray(fetched) && fetched.length > 0) setPosts(fetched.slice(0, 3));
+        if (Array.isArray(fetched) && fetched.length > 0) setPosts(fetched.slice(0, 12));
       })
       .catch(() => undefined);
     return () => {
@@ -38,47 +45,61 @@ export default function Instagram() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {posts.map((post) => {
-            const path = post.type === "reel" ? "reel" : "p";
-            return (
-              <article
-                key={post.shortcode}
-                className="group relative border border-border bg-card/40 hover:border-gold/50 transition-colors flex flex-col"
-              >
-                <div className="flex items-center justify-between px-5 py-4 border-b border-border">
-                  <span className="eyebrow text-gold/80 text-[0.7rem]">@wickryanam</span>
-                  <InstagramIcon className="h-4 w-4 text-gold" strokeWidth={1.4} />
-                </div>
+        <Carousel opts={{ align: "start", loop: true }} className="w-full">
+          <div className="flex items-center justify-between mb-6">
+            <span className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
+              {posts.length} publicações
+            </span>
+            <div className="flex items-center gap-3">
+              <CarouselPrevious className="static translate-y-0 h-10 w-10 border-border bg-card/40 text-foreground hover:bg-gold hover:text-background hover:border-gold" />
+              <CarouselNext className="static translate-y-0 h-10 w-10 border-border bg-card/40 text-foreground hover:bg-gold hover:text-background hover:border-gold" />
+            </div>
+          </div>
 
-                <div className="relative bg-background">
-                  <iframe
-                    src={`https://www.instagram.com/${path}/${post.shortcode}/embed/`}
-                    title={post.title}
-                    loading="lazy"
-                    scrolling="no"
-                    allowFullScreen
-                    className="w-full h-[480px] border-0 block"
-                  />
-                </div>
+          <CarouselContent className="-ml-6">
+            {posts.map((post) => {
+              const path = post.type === "reel" ? "reel" : "p";
+              return (
+                <CarouselItem
+                  key={post.shortcode}
+                  className="pl-6 md:basis-1/2 lg:basis-1/3"
+                >
+                  <article className="group relative h-full border border-border bg-card/40 hover:border-gold/50 transition-colors flex flex-col">
+                    <div className="flex items-center justify-between px-5 py-4 border-b border-border">
+                      <span className="eyebrow text-gold/80 text-[0.7rem]">@wickryanam</span>
+                      <InstagramIcon className="h-4 w-4 text-gold" strokeWidth={1.4} />
+                    </div>
 
-                <div className="p-5 flex-1 flex flex-col justify-between gap-5">
-                  <h3 className="font-display text-xl leading-snug">{post.title}</h3>
-                  <a
-                    href={`https://www.instagram.com/${path}/${post.shortcode}/`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm text-muted-foreground group-hover:text-gold transition"
-                  >
-                    Ver mais no Instagram
-                    <ArrowUpRight className="h-4 w-4" />
-                  </a>
-                </div>
-                <div className="absolute left-0 bottom-0 h-px w-0 bg-gold group-hover:w-full transition-all duration-500" />
-              </article>
-            );
-          })}
-        </div>
+                    <div className="relative bg-background">
+                      <iframe
+                        src={`https://www.instagram.com/${path}/${post.shortcode}/embed/`}
+                        title={post.title}
+                        loading="lazy"
+                        scrolling="no"
+                        allowFullScreen
+                        className="w-full h-[480px] border-0 block"
+                      />
+                    </div>
+
+                    <div className="p-5 flex-1 flex flex-col justify-between gap-5">
+                      <h3 className="font-display text-xl leading-snug">{post.title}</h3>
+                      <a
+                        href={`https://www.instagram.com/${path}/${post.shortcode}/`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm text-muted-foreground group-hover:text-gold transition"
+                      >
+                        Ver mais no Instagram
+                        <ArrowUpRight className="h-4 w-4" />
+                      </a>
+                    </div>
+                    <div className="absolute left-0 bottom-0 h-px w-0 bg-gold group-hover:w-full transition-all duration-500" />
+                  </article>
+                </CarouselItem>
+              );
+            })}
+          </CarouselContent>
+        </Carousel>
 
         <div className="mt-12">
           <a href={instagramProfile} target="_blank" rel="noopener noreferrer" className="btn-gold">

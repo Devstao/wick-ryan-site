@@ -4,7 +4,7 @@ import { createClient } from 'npm:@supabase/supabase-js@2';
 const USERNAME = 'wickryanam';
 const CACHE_ID = USERNAME;
 const SIX_HOURS_MS = 6 * 60 * 60 * 1000;
-const MAX_POSTS = 3;
+const MAX_POSTS = 12;
 
 type Post = {
   shortcode: string;
