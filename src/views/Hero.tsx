@@ -1,9 +1,11 @@
 import jaguarImg from "@/assets/jaguar.png";
 import heroImg from "@/assets/wick-hero.jpg";
+import ElectoralBanner from "@/components/ElectoralBanner";
 
 import {
     ArrowUpRight
 } from "lucide-react";
+
 
 
 export default function Hero() {
