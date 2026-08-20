@@ -12,6 +12,7 @@ import Footer from "@/views/Footer";
 import Hero from "@/views/Hero";
 import Instagram from "@/views/Instagram";
 import Nav from "@/views/Nav";
+import FraudReportPopup from "@/components/FraudReportPopup";
 
 
 const values = values_wick;
@@ -213,6 +214,8 @@ export default function App() {
       <Instagram />
       <Donate />
       <Footer />
+      <FraudReportPopup />
+
 
     </main>
   );
