@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
  */
 export const CANDIDATO = "Wick Ryan";
 export const NUMERO = "1444";
-export const CARGO = "Deputado Estadual";
+export const CARGO = "Deputado Federal";
 export const PARTIDO = "AVANTE";
 
 /** Fim da veiculação: 30/09 às 22h (horário de Brasília, UTC-3) = 01:00 UTC de 01/10. */
