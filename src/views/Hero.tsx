@@ -1,9 +1,11 @@
 import jaguarImg from "@/assets/jaguar.png";
 import heroImg from "@/assets/wick-hero.jpg";
+import ElectoralBanner from "@/components/ElectoralBanner";
 
 import {
     ArrowUpRight
 } from "lucide-react";
+
 
 
 export default function Hero() {
@@ -21,7 +23,9 @@ export default function Hero() {
 
             <div className="container-x grid lg:grid-cols-12 gap-10 lg:gap-16 items-end relative">
                 <div className="lg:col-span-7 animate-fade-up">
+                    <ElectoralBanner />
                     <div className="flex items-center gap-3 mb-8">
+
                         <span className="h-2 w-2 rounded-full bg-gold shadow-[0_0_14px_rgba(252,193,4,0.8)]" />
                         <span className="eyebrow text-gold/90">Amazonas · Brasil</span>
                         <span className="hairline w-16" />
