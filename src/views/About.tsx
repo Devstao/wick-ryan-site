@@ -8,7 +8,7 @@ export default function About() {
     <section id="sobre" className="py-24 md:py-36 relative overflow-hidden">
       <img
         src={jaguarImg}
-        alt="" aria-hidden="true" loading="lazy" decoding="async"
+        alt=""
         aria-hidden
         className="pointer-events-none absolute -right-40 top-20 w-[520px] opacity-[0.04] scale-x-[-1]"
       />

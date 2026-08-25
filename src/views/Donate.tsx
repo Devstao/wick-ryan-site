@@ -93,7 +93,7 @@ export default function Donate() {
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
                 <img
                   src={jaguarImg}
-                  alt="" aria-hidden="true" loading="lazy" decoding="async"
+                  alt=""
                   aria-hidden
                   className="pointer-events-none absolute right-0 bottom-0 w-[280px] opacity-20"
                 />

@@ -14,7 +14,7 @@ export default function Hero() {
             {/* Decorative jaguar silhouette */}
             <img
                 src={jaguarImg}
-                alt="" aria-hidden="true" loading="lazy" decoding="async"
+                alt=""
                 aria-hidden
                 className="pointer-events-none select-none absolute -left-24 bottom-10 w-[460px] opacity-[0.06] hidden md:block"
             />
