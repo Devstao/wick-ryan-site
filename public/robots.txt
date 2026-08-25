@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://wick-ryan-site.lovable.app/sitemap.xml
