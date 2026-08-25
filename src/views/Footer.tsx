@@ -140,7 +140,9 @@ export default function Footer() {
           </div>
           <img
             src={candidatoImg}
-            alt="Pré-candidato"
+            alt="Wick Ryan 1444 — candidato a Deputado Federal pelo Amazonas, Missão (14)"
+            loading="lazy"
+            decoding="async"
             className="h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
         </div>
