@@ -18,7 +18,7 @@ export default function About() {
             <div className="relative">
               <img
                 src={aboutImg}
-                alt="Wick Ryan em agenda institucional pelo interior do Amazonas" loading="lazy" decoding="async"
+                alt="Wick Ryan em agenda institucional pelo interior do Amazonas" decoding="async"
                 width={900}
                 height={1100}
                 loading="lazy"
