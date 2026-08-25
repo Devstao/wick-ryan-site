@@ -60,7 +60,7 @@ export default function Hero() {
                     <div className="absolute -bottom-6 -left-6 h-24 w-24 bg-gold shadow-[0_0_60px_rgba(252,193,4,0.55)]" aria-hidden />
                     <img
                         src={heroImg}
-                        alt="Retrato institucional de Wick Ryan, empreendedor amazonense"
+                        alt="Wick Ryan, candidato a Deputado Federal pelo Amazonas (1444), em retrato institucional" fetchPriority="high" decoding="async"
                         width={1024}
                         height={1280}
                         className="relative w-full aspect-[4/5] object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.6)]"
