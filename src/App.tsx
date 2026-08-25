@@ -132,7 +132,7 @@ function CTA() {
     <section id="contato" className="relative py-24 md:py-40 overflow-hidden">
       <img
         src={amazonImg}
-        alt=""
+        alt="" aria-hidden="true" loading="lazy" decoding="async"
         aria-hidden
         width={1600}
         height={900}
@@ -142,7 +142,7 @@ function CTA() {
       <div className="absolute inset-0 bg-background/85" />
       <img
         src={jaguarImg}
-        alt=""
+        alt="" aria-hidden="true" loading="lazy" decoding="async"
         aria-hidden
         className="pointer-events-none absolute right-0 bottom-0 w-[520px] opacity-[0.08]"
       />
