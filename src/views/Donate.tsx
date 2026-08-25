@@ -87,7 +87,7 @@ export default function Donate() {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={amazonImg}
-                  alt="Rio Amazonas ao entardecer — símbolo de esperança e transformação"
+                  alt="Rio Amazonas ao entardecer — símbolo de esperança e transformação para o Amazonas" loading="lazy" decoding="async"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
