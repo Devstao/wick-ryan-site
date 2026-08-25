@@ -29,17 +29,60 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600&family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" />
 
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="geo.region" content="BR-AM" />
+  <meta name="geo.placename" content="Amazonas, Brasil" />
+
   <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Wick Ryan",
-        "url": "https://wick-ryan-site.lovable.app/",
-        "jobTitle": "Candidato a Deputado Federal pelo Amazonas — Missão (14), número 1444",
-        "birthDate": "1999",
-        "birthPlace": "Benjamin Constant, Amazonas, Brasil",
-        "sameAs": ["https://www.instagram.com/wickryanam"],
-        "description": "Empreendedor amazonense e candidato a Deputado Federal (1444, Missão), dedicado ao desenvolvimento regional, à inovação e à sustentabilidade da Amazônia."
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://wick-ryan-site.lovable.app/#website",
+            "url": "https://wick-ryan-site.lovable.app/",
+            "name": "Wick Ryan 1444",
+            "inLanguage": "pt-BR",
+            "description": "Site oficial de Wick Ryan, candidato a Deputado Federal pelo Amazonas — Missão (14), número 1444.",
+            "publisher": { "@id": "https://wick-ryan-site.lovable.app/#person" }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://wick-ryan-site.lovable.app/#profilepage",
+            "url": "https://wick-ryan-site.lovable.app/",
+            "name": "Wick Ryan 1444 — Deputado Federal pelo Amazonas",
+            "isPartOf": { "@id": "https://wick-ryan-site.lovable.app/#website" },
+            "inLanguage": "pt-BR",
+            "mainEntity": { "@id": "https://wick-ryan-site.lovable.app/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://wick-ryan-site.lovable.app/#person",
+            "name": "Wick Ryan",
+            "url": "https://wick-ryan-site.lovable.app/",
+            "jobTitle": "Candidato a Deputado Federal pelo Amazonas — Missão (14), número 1444",
+            "nationality": "Brasileira",
+            "birthDate": "1999",
+            "birthPlace": {
+              "@type": "Place",
+              "name": "Benjamin Constant, Amazonas, Brasil"
+            },
+            "homeLocation": {
+              "@type": "Place",
+              "name": "Amazonas, Brasil"
+            },
+            "knowsAbout": [
+              "Desenvolvimento regional da Amazônia",
+              "Hidrovias e infraestrutura logística",
+              "Autonomia energética e energia limpa",
+              "Responsabilidade ambiental",
+              "Waste to Energy"
+            ],
+            "sameAs": ["https://www.instagram.com/wickryanam"],
+            "description": "Empreendedor amazonense e candidato a Deputado Federal (1444, Missão), dedicado ao desenvolvimento regional, à inovação e à sustentabilidade da Amazônia."
+          }
+        ]
       }
     </script>
 
